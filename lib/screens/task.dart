@@ -543,29 +543,7 @@ class _TaskScreenState extends State<TaskScreen> with WidgetsBindingObserver {
         });
   }
 
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    super.didChangeAppLifecycleState(state);
-
-    // These are the callbacks
-    switch (state) {
-      case AppLifecycleState.resumed:
-        // widget is resumed
-        print("widget resumed");
-        break;
-      case AppLifecycleState.inactive:
-        // widget is inactive
-        print("widget Incactive");
-        break;
-      case AppLifecycleState.paused:
-        // widget is paused
-        break;
-      case AppLifecycleState.detached:
-        // widget is detached
-        print("widget detached");
-        break;
-    }
-  }
+  
 
   @override
   void initState() {
